@@ -2,17 +2,27 @@
 <ModMetaData>
 	<packageId>CrunchyDuck.ImOff</packageId>
 	<name>I'm off</name>
-	<description>Adds a quest that allows pawns to join other friendly factions permanently.
+	<description>Let go of colonists with an immersive quest that allows pawns to join other friendly factions permanently.
 
-Too often, someone joins your colony, claiming they have nowhere else to go. And because of your Ideology™ (DLC not required), you can't just turn them away! Well, now they do have somewhere else to go! This quest gives you a nice, moral way to get rid of colonists you don't want hanging around - on top of a neat reward for doing so.
+Too often, someone joins your colony, claiming they have nowhere else to go. And because of your Ideology™ (DLC not required), you can't just turn them away! Well, now they [i]do[/i] have somewhere else to go! This quest gives you a nice, moral way to get rid of colonists you don't want hanging around - on top of a neat reward for doing so. You of course can choose which colonists are sent away.
 
 Colonists you give away are set to belong to that new faction. Good chance you'll see them again in caravans - or in raids!
 
 This quest is heavily based off the Pawn Lending quest from Royalty™ (DLC not required), and its rewards/regularity/etc.
+If you have any suggestions for changes, I'm happy to hear them.
 
-Compatibility:
-Shouldn't have any problems with other mods or new saves.
-If you do find an issue, let me know and I'll get right on it.</description>
+[h2]Compatibility[/h2]
+Shouldn't have any problems with other mods or new saves, and should work with any mods that modify the quest system.
+If you do find an issue, let me know and I'll get right on it.
+
+[b]Links:[/b]
+Github: https://github.com/CrunchyDuck/Im-off
+
+[b]credit[/b]
+commissioner: me
+lead fundraiser: me
+marketing: me
+all proceeds go to: me (none)</description>
 	<author>CrunchyDuck</author>
     <supportedVersions>
     <li>1.3</li>

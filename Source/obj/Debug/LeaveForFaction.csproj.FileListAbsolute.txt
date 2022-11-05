@@ -1,5 +1,0 @@
-D:\Games_&_emulators\Steam\steamapps\common\RimWorld\Mods\JoinNewFaction\Source\obj\Debug\LeaveForFaction.csprojAssemblyReference.cache
-D:\Games_&_emulators\Steam\steamapps\common\RimWorld\Mods\JoinNewFaction\Source\obj\Debug\LeaveForFaction.csproj.CoreCompileInputs.cache
-D:\Games_&_emulators\Steam\steamapps\common\RimWorld\Mods\JoinNewFaction\Source\obj\Debug\LeaveForFaction.dll
-D:\Games_&_emulators\Steam\steamapps\common\RimWorld\Mods\JoinNewFaction\LeaveForFaction.dll
-D:\Games_&_emulators\Steam\steamapps\common\RimWorld\Mods\JoinNewFaction\Assemblies\LeaveForFaction.dll
