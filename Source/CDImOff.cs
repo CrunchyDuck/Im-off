@@ -100,22 +100,22 @@ namespace CrunchyDuck {
 
 		// I'm not quite sure when this is invoked, so I don't want to remove it.
 		public override void Notify_PawnKilled(Pawn pawn, DamageInfo? dinfo) {
-			if (!lentColonists.Contains((Thing)pawn))
+			base.Notify_PawnKilled(pawn, dinfo);
+			if (!lentColonists.Contains(pawn))
 				return;
-			Building_Grave assignedGrave = (Building_Grave)null;
-			if (pawn.ownership != null)
-				assignedGrave = pawn.ownership.AssignedGrave;
+			Building_Grave assignedGrave = pawn.ownership?.AssignedGrave;
 			Corpse val = pawn.MakeCorpse(assignedGrave, false, 0.0f);
-			lentColonists.Remove((Thing)pawn);
+			lentColonists.Remove(pawn);
 			Map anyPlayerHomeMap = Find.AnyPlayerHomeMap;
 			if (anyPlayerHomeMap != null)
-				DropPodUtility.DropThingsNear(DropCellFinder.TradeDropSpot(anyPlayerHomeMap), anyPlayerHomeMap, (IEnumerable<Thing>)Gen.YieldSingle(val), canRoofPunch: false, forbid: false);
+				DropPodUtility.DropThingsNear(DropCellFinder.TradeDropSpot(anyPlayerHomeMap), anyPlayerHomeMap, Gen.YieldSingle(val), canRoofPunch: false, forbid: false);
 			if (outSignalColonistsDied.NullOrEmpty() || lentColonists.Count != 0)
 				return;
 			Find.SignalManager.SendSignal(new Signal(outSignalColonistsDied));
 		}
 
 		public override void DoDebugWindowContents(Rect innerRect, ref float curY) {
+			base.DoDebugWindowContents(innerRect, ref curY);
 			if (State != QuestPartState.Enabled)
 				return;
 			Rect rect = new Rect(innerRect.x, curY, 500f, 25f);
